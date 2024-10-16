@@ -595,8 +595,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   meteoritoPrefab: {fileID: 2334489052988521699, guid: 0d9aa4dc7048540478596c9fcc28b42d, type: 3}
-  Delay: 3
-  Tiempoinicio: 2
+  Delay: 2
+  Tiempoinicio: 1
   zonaMeteoritos: {fileID: 801597560}
 --- !u!1 &1815948122
 GameObject:

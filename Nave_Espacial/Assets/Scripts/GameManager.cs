@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
 
     public void ResetPos()
     {
-        Nave.GetComponent<Nave>().Reset();
+        Nave.GetComponent<Movimiento>().Reset();
 
 
     }

@@ -24,23 +24,32 @@ public class meteoritosAlvaro : MonoBehaviour
         Vector3 pos = new Vector3(x, y, 0);
         //transform.position = new Vector3(Mathf.Round(x), Mathf.Round(y), 0);
         Instantiate(meteoritoPrefab, pos, meteoritoPrefab.transform.rotation);
-        
+
     }
     // Update is called once per frame
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.CompareTag("bola"))
+        if (collision.CompareTag("bola"))
         {
             Destroy(collision.gameObject);
         }
 
-   
+
     }
     public void spawn(float delay)
     {
         InvokeRepeating("RandomPosition", Tiempoinicio, delay);
     }
-    
+
+
+    /*void acelerador()
+    {
+        GetComponent<temporizador>.sec;
+        if(sec/2==0)
+        {
+            Delay / 2;
+        }
+    }*/
 }  
 
 

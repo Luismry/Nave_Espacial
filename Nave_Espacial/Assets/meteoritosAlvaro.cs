@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static Unity.Burst.Intrinsics.X86.Avx;
 
 public class meteoritosAlvaro : MonoBehaviour
 {
     public GameObject meteoritoPrefab;
     public float Delay = 3f;
     public int Tiempoinicio = 2;
+    public GameObject temp;
     //public bool barrera;
 
     public BoxCollider2D zonaMeteoritos;
@@ -14,6 +16,12 @@ public class meteoritosAlvaro : MonoBehaviour
     void Start()
     {
         InvokeRepeating("RandomPosition", Tiempoinicio, Delay);
+    }
+
+    private void Update()
+    {
+        acelerador();
+        Debug.Log(temp.GetComponent<temporizador>().sec);
     }
 
     public void RandomPosition()
@@ -42,14 +50,14 @@ public class meteoritosAlvaro : MonoBehaviour
     }
 
 
-    /*void acelerador()
+    void acelerador()
     {
-        GetComponent<temporizador>.sec;
-        if(sec/2==0)
+        if((temp.GetComponent<temporizador>().sec)%2 == 0)
         {
-            Delay / 2;
+            Delay /= 2;
+            Debug.Log("Ashuda");
         }
-    }*/
+    }
 }  
 
 

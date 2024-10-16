@@ -6,7 +6,7 @@ using TMPro;
 public class temporizador : MonoBehaviour
 {
     public TMP_Text countertext;
-    float sec;
+    public float sec;
     float min;
     public meteoritosAlvaro gm;
 

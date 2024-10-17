@@ -5,6 +5,9 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+  - enabled: 0
+    path: Assets/Scenes/Escena_Luis.unity
+    guid: f8e4effdee43ad74590556c7380ece92
   - enabled: 1
     path: Assets/Scenes/Escena_Alvaro.unity
     guid: 2cda990e2423bbf4892e6590ba056729

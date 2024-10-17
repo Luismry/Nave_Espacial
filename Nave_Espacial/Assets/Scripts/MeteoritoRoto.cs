@@ -7,7 +7,7 @@ public class MeteoritoRoto : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Nave"))
+        if (collision.CompareTag("nave"))
         {
             SceneManager.LoadScene("Escena_Marta");
         }

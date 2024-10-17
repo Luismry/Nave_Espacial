@@ -13,8 +13,8 @@ public class temporizador : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        min = (int)(Time.time / 60F);
-        sec = (int)(Time.time % 60F);
+        min = (int)(Time.timeSinceLevelLoad / 60F);
+        sec = (int)(Time.timeSinceLevelLoad % 60F);
         countertext.text = min.ToString("00") + ":" + sec.ToString("00");
     }
 

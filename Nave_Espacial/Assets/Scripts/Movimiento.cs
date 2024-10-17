@@ -32,12 +32,5 @@ public class Movimiento : MonoBehaviour
         transform.position = starPos;
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.CompareTag("meteorito"))
-        {
-            Reset();
 
-        }
-    }
 }

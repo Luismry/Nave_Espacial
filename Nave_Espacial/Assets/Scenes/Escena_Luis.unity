@@ -205,7 +205,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 16727691}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1945687132}
+        m_TargetAssemblyTypeName: menu, Assembly-CSharp
+        m_MethodName: IrAlJuego
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &16727691
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -425,7 +437,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 526196430}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1945687132}
+        m_TargetAssemblyTypeName: menu, Assembly-CSharp
+        m_MethodName: Salir
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &526196430
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -897,6 +921,7 @@ GameObject:
   - component: {fileID: 1945687130}
   - component: {fileID: 1945687129}
   - component: {fileID: 1945687128}
+  - component: {fileID: 1945687132}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -987,6 +1012,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1945687132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1945687127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c02879e0049f094abd986b88a445a37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Menu: {fileID: 0}
+  estaPausado: 0
 --- !u!1 &2019500680
 GameObject:
   m_ObjectHideFlags: 0

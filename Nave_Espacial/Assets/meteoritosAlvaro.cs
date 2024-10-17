@@ -9,6 +9,7 @@ public class meteoritosAlvaro : MonoBehaviour
     public float Delay = 3f;
     public int Tiempoinicio = 2;
     public GameObject temp;
+    bool acelera = false;
     //public bool barrera;
 
     public BoxCollider2D zonaMeteoritos;
@@ -21,7 +22,7 @@ public class meteoritosAlvaro : MonoBehaviour
     private void Update()
     {
         acelerador();
-        Debug.Log(temp.GetComponent<temporizador>().sec);
+        //Debug.Log(temp.GetComponent<temporizador>().sec);
     }
 
     public void RandomPosition()
@@ -52,10 +53,17 @@ public class meteoritosAlvaro : MonoBehaviour
 
     void acelerador()
     {
-        if((temp.GetComponent<temporizador>().sec)%2 == 0)
+        if ((temp.GetComponent<temporizador>().sec) % 15 == 0 && temp.GetComponent<temporizador>().sec != 0 && !acelera)
         {
-            Delay /= 2;
+            acelera = true;
+            Delay /= 1.5f ;
+            CancelInvoke("RandomPosition");
+            InvokeRepeating("RandomPosition", 0, Delay);
             Debug.Log("Ashuda");
+        }
+        else if((temp.GetComponent<temporizador>().sec) % 15 != 0)
+        {
+            acelera = false;
         }
     }
 }  

@@ -46,6 +46,7 @@ public class menu : MonoBehaviour
     public void IrAlMenu()
     {
         SceneManager.LoadScene("Escena_Luis");
+        Time.timeScale = 1f;
     }
 
     public void IrAlJuego()
